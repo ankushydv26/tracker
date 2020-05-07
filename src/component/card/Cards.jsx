@@ -5,7 +5,7 @@ import CountUp  from 'react-countup';
 import cx from "classname";
 
 
- const Cards = ({ data:{ confirmed,recovered, deaths,lastUpdate }}) => {
+const Cards = ({ data:{ confirmed,recovered, deaths,lastUpdate }}) => {
     //  console.log(confirmed)
      if(!confirmed){
          return 'Loding....';
@@ -55,7 +55,7 @@ import cx from "classname";
                 />
                 </Typography>                
                 <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                <Typography variant="body2">Number of Recovered from COVID-19  </Typography>
+                <Typography variant="body2">Number of Deaths from COVID-19  </Typography>
             </CardContent>
          </Grid>
          </Grid>
